@@ -17,7 +17,7 @@ public class Roam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PickNewDestination();
+        if (agent.remainingDistance < 1) PickNewDestination();
     }
 
     void PickNewDestination()
